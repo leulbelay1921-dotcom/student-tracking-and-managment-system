@@ -1,0 +1,9 @@
+target/
+.dockerignore
+.git/
+.gitignore
+*.log
+up.out.log
+up.err.log
+.idea/
+.vscode/

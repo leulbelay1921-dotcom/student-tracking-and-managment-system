@@ -1,0 +1,31 @@
+package com.sitms.audit;
+
+/**
+ * The security-relevant domain event recorded by an {@link AuditLog} entry (SITMS-056, EPIC 13).
+ *
+ * <p>Mirrors the notify-worthy boundaries of EPIC 12: state transitions and review/approval
+ * decisions. Values are persisted as strings and must not be renamed.
+ */
+public enum AuditAction {
+  INTERNSHIP_STATUS_CHANGE,
+  INTERNSHIP_SUPERVISOR_ASSIGNED,
+  APPLICATION_SUBMITTED,
+  APPLICATION_DECIDED,
+  ACTIVITY_SUBMITTED,
+  ACTIVITY_REVIEWED,
+  EVALUATION_SUBMITTED,
+  ACADEMIC_EVALUATION_SUBMITTED,
+  DOCUMENT_UPLOADED,
+  DOCUMENT_REVIEWED,
+  DOCUMENT_DELETED,
+  ATTENDANCE_RECORDED,
+  LEAVE_REQUEST_SUBMITTED,
+  LEAVE_REQUEST_REVIEWED,
+  ATTENDANCE_ISSUE_REPORTED,
+  ATTENDANCE_ISSUE_REVIEWED,
+  WEEKLY_REPORT_SUBMITTED,
+  WEEKLY_REPORT_COMPANY_APPROVED,
+  WEEKLY_REPORT_REVIEWED,
+  TICKET_CREATED,
+  TICKET_UPDATED
+}
